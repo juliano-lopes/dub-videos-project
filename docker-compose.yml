@@ -4,13 +4,13 @@ networks:
 
 services:
   front:
-    build: ./DubVideosFrontEnd
+    build: ./app/dub-videos-front-end
     ports:
       - "8000:8000"
     networks:
       - net-dub-videos
   main_api:
-    build: ./main-dub-videos-api
+    build: ./app/main-dub-videos-api
     ports:
       - "5000:5000"
     depends_on:
@@ -21,7 +21,7 @@ services:
     networks:
       - net-dub-videos
   transcription:
-    build: ./transcription-api
+    build: ./app/transcription-api
     ports:
       - "5001:5001"
     container_name: dub_videos_transcription
@@ -30,7 +30,7 @@ services:
     networks:
       - net-dub-videos
   speech:
-    build: ./text-to-speech-api
+    build: ./app/text-to-speech-api
     ports:
       - "5002:5002"
     container_name: dub_videos_speech

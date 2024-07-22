@@ -6,9 +6,10 @@ Este projeto possui 4 componentes:
 * [Main Dub Videos API](https://github.com/juliano-lopes/main-dub-videos-api)  
 * [Transcription API](https://github.com/juliano-lopes/transcription-api)  
 * [Text To Speech API](https://github.com/juliano-lopes/text-to-speech-api)  
-Assim clone este repositório e depois clone os 4 repositorios anteriores em sua raiz, onde se encontram 3 outros arquivos:
+Assim clone este repositório e depois clone os 4 repositorios anteriores no diretório **app** que se encontra na raiz deste projeto, onde se encontram 3 outros arquivos:
 * Readme.md que contém estas  instruções;  
 * .env que possui as variáveis de ambiente necessárias;  
+* .Gitignore para ignorar arquivos e pastas quando do versionamento deste projeto;
 * docker-compose.yml para subir os 4 componentes.
 
 ## Chaves do projeto
